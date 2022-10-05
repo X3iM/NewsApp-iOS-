@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A5AC26728EE14F1008D1B9B /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AC26628EE14F1008D1B9B /* APICaller.swift */; };
+		7A5AC26A28EE18CD008D1B9B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AC26928EE18CD008D1B9B /* Article.swift */; };
+		7A5AC26E28EE2554008D1B9B /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AC26D28EE2554008D1B9B /* NewsTableViewCell.swift */; };
+		7A5AC27028EE2631008D1B9B /* NewsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AC26F28EE2631008D1B9B /* NewsTableViewCellViewModel.swift */; };
 		7A9BCD2928EDE6DF0015AEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BCD2828EDE6DF0015AEF2 /* AppDelegate.swift */; };
 		7A9BCD2B28EDE6DF0015AEF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BCD2A28EDE6DF0015AEF2 /* SceneDelegate.swift */; };
 		7A9BCD2D28EDE6DF0015AEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BCD2C28EDE6DF0015AEF2 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A5AC26628EE14F1008D1B9B /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		7A5AC26928EE18CD008D1B9B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		7A5AC26D28EE2554008D1B9B /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		7A5AC26F28EE2631008D1B9B /* NewsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		7A9BCD2528EDE6DF0015AEF2 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9BCD2828EDE6DF0015AEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A9BCD2A28EDE6DF0015AEF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A5AC26828EE18A5008D1B9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A5AC26628EE14F1008D1B9B /* APICaller.swift */,
+				7A5AC26928EE18CD008D1B9B /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A5AC26B28EE2507008D1B9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A5AC26D28EE2554008D1B9B /* NewsTableViewCell.swift */,
+				7A5AC26F28EE2631008D1B9B /* NewsTableViewCellViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A5AC26C28EE252B008D1B9B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A9BCD2C28EDE6DF0015AEF2 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		7A9BCD1C28EDE6DF0015AEF2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +92,16 @@
 		7A9BCD2728EDE6DF0015AEF2 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A5AC26828EE18A5008D1B9B /* Models */,
+				7A5AC26B28EE2507008D1B9B /* Views */,
+				7A5AC26C28EE252B008D1B9B /* Controllers */,
 				7A9BCD2828EDE6DF0015AEF2 /* AppDelegate.swift */,
 				7A9BCD2A28EDE6DF0015AEF2 /* SceneDelegate.swift */,
-				7A9BCD2C28EDE6DF0015AEF2 /* ViewController.swift */,
+				7A9BCD3C28EDE7200015AEF2 /* K.swift */,
 				7A9BCD2E28EDE6DF0015AEF2 /* Main.storyboard */,
 				7A9BCD3128EDE6E10015AEF2 /* Assets.xcassets */,
 				7A9BCD3328EDE6E10015AEF2 /* LaunchScreen.storyboard */,
 				7A9BCD3628EDE6E10015AEF2 /* Info.plist */,
-				7A9BCD3C28EDE7200015AEF2 /* K.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -142,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A9BCD2D28EDE6DF0015AEF2 /* ViewController.swift in Sources */,
+				7A5AC26E28EE2554008D1B9B /* NewsTableViewCell.swift in Sources */,
 				7A9BCD3D28EDE7200015AEF2 /* K.swift in Sources */,
+				7A5AC26A28EE18CD008D1B9B /* Article.swift in Sources */,
 				7A9BCD2928EDE6DF0015AEF2 /* AppDelegate.swift in Sources */,
+				7A5AC26728EE14F1008D1B9B /* APICaller.swift in Sources */,
+				7A5AC27028EE2631008D1B9B /* NewsTableViewCellViewModel.swift in Sources */,
 				7A9BCD2B28EDE6DF0015AEF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

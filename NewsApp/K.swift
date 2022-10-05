@@ -7,4 +7,5 @@
 
 struct K {
     static let appTitle = "News"
+    static let cellReuseIdentifier = "cell"
 }
